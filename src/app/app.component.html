@@ -1,0 +1,33 @@
+<h1>{{title}}</h1>
+<h3>{{subtitle}}</h3>
+<br/>
+<input type="text" [value]="title" (input)="title = test.value" #test>
+<br/><br/>
+<button (click)="viewData()">viewData</button>
+<br/><br/>
+<button (click)="viewGames()">viewGames</button>
+<br/><br/>
+
+
+<table>
+  <thead>
+      <tr>
+          <th>Nombre</th>
+          <th>Descripción</th>
+          <th>Plataforma</th> 
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let item of viewGames()">
+          <td>{{item.name}}</td>
+          <td>{{item.description}}</td>
+          <td>{{item.plataform}}</td>
+      </tr>
+  </tbody>
+</table>
+
+<br/><br/>
+
+<app-home></app-home>
+<router-outlet></router-outlet>
+
