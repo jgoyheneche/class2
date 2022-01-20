@@ -21,6 +21,11 @@ export class GamesService {
       name:'GTA 3',
       description:'Juego de aventuras 3',
       plataform:'Todas las plataformas 3'
+    },
+    {
+      name:'GTA 4',
+      description:'Juego de aventuras 4',
+      plataform:'Todas las plataformas 4'
     }
   ]
 
